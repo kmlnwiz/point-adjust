@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="ja" data-bs-theme="light" ch>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>魔道杯　ポイント調整</title>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta property="og:url" content="https://kmlnwiz.github.io/point-adjust/" />
+    <meta property="og:title" content="魔道杯　ポイント調整" />
+    <meta property="og:description" content="魔道杯のポイントを調整するツール" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/kmlnwiz/point-adjust/main/image/ico.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/kmlnwiz/point-adjust/main/image/ico.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid bg-body">
+
+        <span class="d-inline-block w-100 h1 text-center border-bottom my-3">魔道杯　ポイント調整</span>
+
+        <div class="row g-0 mb-3">
+
+            <div class="col-12 col-lg-6 p-3 border">
+                <div class="accordion accordion-flush" id="accordionFlush">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseA-One" aria-expanded="false" aria-controls="flush-collapseA-One">
+                                イベントトーナメント覇級
+                            </button>
+                        </h2>
+                        <div id="flush-collapseA-One" class="accordion-collapse collapse show">
+                            <div id="accA-item1" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseA-Two" aria-expanded="false" aria-controls="flush-collapseA-Two">
+                                イベントトーナメント絶級
+                            </button>
+                        </h2>
+                        <div id="flush-collapseA-Two" class="accordion-collapse collapse">
+                            <div id="accA-item2" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseA-Three" aria-expanded="false" aria-controls="flush-collapseA-Three">
+                                イベントトーナメント上級
+                            </button>
+                        </h2>
+                        <div id="flush-collapseA-Three" class="accordion-collapse collapse">
+                            <div id="accA-item3" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseA-Four" aria-expanded="false" aria-controls="flush-collapseA-Four">
+                                イベントトーナメント中級
+                            </button>
+                        </h2>
+                        <div id="flush-collapseA-Four" class="accordion-collapse collapse">
+                            <div id="accA-item4" class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 p-3 border">
+                <div class="accordion accordion-flush" id="accordionFlush">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseB-One" aria-expanded="false" aria-controls="flush-collapseB-One">
+                                慧王【昴】拾式
+                            </button>
+                        </h2>
+                        <div id="flush-collapseB-One" class="accordion-collapse collapse">
+                            <div id="accB-item1" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseB-Two" aria-expanded="false" aria-controls="flush-collapseB-Two">
+                                叡王【熾】玖式
+                            </button>
+                        </h2>
+                        <div id="flush-collapseB-Two" class="accordion-collapse collapse">
+                            <div id="accB-item2" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseB-Three" aria-expanded="false" aria-controls="flush-collapseB-Three">
+                                叡王【沌】捌式
+                            </button>
+                        </h2>
+                        <div id="flush-collapseB-Three" class="accordion-collapse collapse">
+                            <div id="accB-item3" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseB-Four" aria-expanded="false" aria-controls="flush-collapseB-Four">
+                                叡王【凌】漆式
+                            </button>
+                        </h2>
+                        <div id="flush-collapseB-Four" class="accordion-collapse collapse">
+                            <div id="accB-item4" class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseB-Five" aria-expanded="false" aria-controls="flush-collapseB-Five">
+                                叡王【虚】陸式
+                            </button>
+                        </h2>
+                        <div id="flush-collapseB-Five" class="accordion-collapse collapse">
+                            <div id="accB-item5" class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-3">
+
+            <div id="option1" class="col-12 col-lg-6 p-3 border">
+                <div class="mb-2">
+                    <label class="" for="current-point">現在のポイント</label>
+                    <input type="number" class="current-point form-control" id="current-point" placeholder="" min="0" max="99999999" step="100000" value="0" maxlength="8">
+                </div>
+                <div class="mb-2">
+                    <label class="" for="target-point">目標のポイント</label>
+                    <input type="number" class="target-point form-control" id="target-point" placeholder="" min="0" max="99999999" step="100000" value="0" maxlength="8">
+                </div>
+            </div>
+
+            <div id="option2" class="col-12 col-lg-6 p-3 border row g-0">
+                <div id="event" class="col-12 col-md-6 mb-3 pe-md-3">
+                    <span class="d-inline-block w-100 h5 border-bottom">イベントトーナメント</span>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="event_class1" checked>
+                        <label class="form-check-label" for="event_class1">
+                            イベントトーナメント覇級
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="event_class2" checked>
+                        <label class="form-check-label" for="event_class2">
+                            イベントトーナメント絶級
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="event_class3" checked>
+                        <label class="form-check-label" for="event_class3">
+                            イベントトーナメント上級
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="event_class4" checked>
+                        <label class="form-check-label" for="event_class4">
+                            イベントトーナメント中級
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="event_class0" checked>
+                        <label class="form-check-label" for="event_class0">
+                            イベントトーナメント覇級（練習）
+                        </label>
+                    </div>
+                </div>
+
+                <div id="normal" class="col-12 col-md-6 mb-3 pe-md-3">
+                    <span class="d-inline-block w-100 h5 border-bottom">通常トーナメント</span>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="normal_class1" checked>
+                        <label class="form-check-label" for="normal_class1">
+                            慧王【昴】拾式
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="normal_class2" checked>
+                        <label class="form-check-label" for="normal_class2">
+                            叡王【熾】玖式
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="normal_class3" checked>
+                        <label class="form-check-label" for="normal_class3">
+                            叡王【沌】捌式
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="normal_class4">
+                        <label class="form-check-label" for="normal_class4">
+                            叡王【凌】漆式
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input use-select" type="checkbox" value="" id="normal_class5">
+                        <label class="form-check-label" for="normal_class5">
+                            叡王【虚】陸式
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-3">
+
+            <div id="image-source">
+                <div id="which-mode" class="w-100 h4 row g-0 my-0">
+                    <span class="col d-inline-block text-bg-danger text-center py-2">ポイント調整</span>
+                </div>
+
+                <div class="row g-0">
+
+                    <div class="col-12 col-xxl-5 row row-cols-1 row-cols-xxl-1 g-0">
+
+                        <div class="col col-sm-6 p-3 border">
+                            <div>
+                                <div class="row g-1">
+                                    <div class="col-12 col-lg-6">
+                                        <span class="d-inline-block small w-100 text-center">現在のポイント</span>
+                                        <span id="show-current-point" class="d-inline-block h4 w-100 text-center">0<span class="small"> Pt</span></span>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <span class="d-inline-block small w-100 text-center">目標ポイント</span>
+                                        <span id="show-target-point" class="d-inline-block h4 w-100 text-center">0<span class="small"> Pt</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-sm-6 p-3 border">
+                            <div>
+                                <div class="row g-1">
+                                    <div class="col-12 col-lg-6">
+                                        <span class="d-inline-block small w-100 text-center">トーナメント回数</span>
+                                        <span id="show-tournament-count" class="d-inline-block h4 w-100 text-center">0<span class="small"> 回</span></span>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <span class="d-inline-block small w-100 text-center">予想所要時間（β）</span>
+                                        <span id="show-tournament-time" class="d-inline-block h4 w-100 text-center">0<span class="small"> 時間 </span>0<span class="small"> 分</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-12 p-3 border">
+                            <div>
+                                <div class="row g-1">
+                                    <div class="col-12 col-sm-6 px-3">
+                                        <span class="d-inline-block small w-100 text-center">イベントトーナメント</span>
+                                        <ul id="show-select-event" class="list-group list-group-flush">
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-sm-6 px-3">
+                                        <span class="d-inline-block small w-100 text-center">通常トーナメント</span>
+                                        <ul id="show-select-normal" class="list-group list-group-flush">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-xxl-7 row g-0 pt-3 pt-lg-0">
+
+                        <div class="col p-3 border">
+                            <div id="result" class="table-responsive"></div>
+                        </div>
+
+                    </div>
+                    <div id="generate-date" class="border bg-body-secondary text-muted text-end px-1 small">0000/00/00</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="position-sticky bottom-0 bg-body py-3 border-top" style="z-index:2;">
+            <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="createImg()">
+                画像化する
+            </button>
+        </div>
+
+        <div class="row row-cols-1 g-0">
+            <div class="alert alert-info" role="alert">
+                入力された情報から、どのトーナメントをどのくらいクリアすれば目標のポイントを達成できるかを計算します。<br>
+                挑戦回数が同様となる解が複数ある場合は、そのうちの1つを表示します。<br><br>
+                〈優先される事項〉<br>
+                ➀1位以外の調整を要する回数が最小<br>
+                ➁9位以外の調整を要する回数が最小<br>
+                ➂挑戦回数の合計が最小<br>
+                ➃トーナメントの種類数が最小
+            </div>
+            <!--<div class="alert alert-warning" role="alert">
+                Safariなどでフォームの入力内容が画像に反映されない場合は、設定からトラッキングの防止をオフにすると描写される場合があります。なお設定の変更により生じた不利益等については一切責任を負いません。
+            </div>-->
+            <div class="alert alert-secondary mt-0" role="alert">
+                使用している画像等の知的財産は提供者様側に帰属します。
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">画像化</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-0">長押しで保存</p>
+                    <img id="canvas-output" class="border border-2 img-fluid my-1">
+                </div>
+                <div class="modal-footer p-2">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-alpha.12/dist/html2canvas.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/adjust.js"></script>
+
+    <script>
+        var listItems = "";
+
+        for (var i = 30; i >= 0; i--) {
+            listItems += "<li><a class='dropdown-item' value='" + i + "'>" + i + "</a></li>";
+        };
+        $('.dropdown-menu').each(function () {
+            //console.log(this)
+            $(this).html(listItems);
+        });
+    </script>
+    <script>
+        $('.dropdown-menu li').click(function () {
+            const parentId = $(this).parent().attr('id').slice(-1);
+            const text = $(this).text();
+
+            $(`#seal-level${parentId}`).val(text);
+            handleFormChange();
+        });
+    </script>
+    <script>
+        //画像生成
+        document.createImg = () => {
+            //window.scrollTo(0, 0);
+            setTimeout(function () {
+                const content = document.querySelector('#image-source');
+                const canvasElement = document.querySelector('#canvas-output');
+
+                html2canvas(content, {
+                    windowWidth: 1600,
+                    windowHeight: 900,
+                    scrollX: 0,
+                    scrollY: window.scrollY,
+                    backgroundColor: window.getComputedStyle(document.body).backgroundColor,
+                    allowTaint: true,
+                    proxy: true,
+                    useCORS: true,
+                }).then(canvas => {
+                    canvasElement.src = canvas.toDataURL();
+                });
+            }, 200)
+        };
+    </script>
+    <script>
+        /*!
+         * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+         * Copyright 2011-2023 The Bootstrap Authors
+         * Licensed under the Creative Commons Attribution 3.0 Unported License.
+         */
+
+        (() => {
+            'use strict'
+
+            const storedTheme = localStorage.getItem('theme')
+
+            const getPreferredTheme = () => {
+                if (storedTheme) {
+                    return storedTheme
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+            }
+
+            const setTheme = function (theme) {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark')
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme)
+                }
+            }
+
+            setTheme(getPreferredTheme())
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitcher = document.querySelector('#bd-theme')
+
+                if (!themeSwitcher) {
+                    return
+                }
+
+                const themeSwitcherText = document.querySelector('#bd-theme-text')
+                const activeThemeIcon = document.querySelector('.theme-icon-active use')
+                const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active')
+                    element.setAttribute('aria-pressed', 'false')
+                })
+
+                btnToActive.classList.add('active')
+                btnToActive.setAttribute('aria-pressed', 'true')
+                activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+                const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+                themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+                if (focus) {
+                    themeSwitcher.focus()
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme())
+                }
+            })
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme())
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            localStorage.setItem('theme', theme)
+                            setTheme(theme)
+                            showActiveTheme(theme, true)
+                        })
+                    })
+            })
+        })()
+    </script>
+    <style>
+        img.no-save {
+            pointer-events: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-drag: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Old versions of Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                        supported by Chrome and Opera */
+        }
+
+        /*.table-sticky-border::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: calc(var(--bs-border-width) * 2) solid currentcolor;
+            z-index: -1;
+        }*/
+    </style>
+</body>
+</html>
