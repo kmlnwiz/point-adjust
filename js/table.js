@@ -52,7 +52,7 @@ $(function () {
             html +=
                 `<tr class="${ i + 1 < 9 && i + 1 > 1 ? '':''}">` +
                 `<td class="text-center" scope="col">${i + 1 < 9 ? `${i + 1}位` : `9位以下`}</td>` +
-                `<td class="text-center" scope="col"><input id="point-custom${order}-${i}" class="form-control text-center" type="number" placeholder="0" aria-label="" min="0" max="99999" value="${data['data'][order][i]}"></td>` +
+                `<td class="text-center" scope="col"><input id="point-custom${order}-${i}" class="form-control form-control-sm text-center" type="number" placeholder="0" aria-label="" min="0" max="99999" value="${data['data'][order][i]}"></td>` +
                 `</tr>`;
         };
 
@@ -101,6 +101,7 @@ function generateResult(result, current) {
     let html = '';
     html +=
         `<table class="table table-hover table-sm align-middle">` +
+        `<caption class="d-md-none">横にスクロールできます</caption>` +
         `<thead class="">` +
         `<tr class="">`;
 
