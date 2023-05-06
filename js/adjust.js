@@ -84,9 +84,13 @@ function point_adjust() {
         let html = '';
         for (let i = 0; i < arr.length; i++) {
             if (arr[i]['onUse']) {
-                html += `<li class="list-group-item"><span><i class="bi bi-check-lg me-2 text-primary"></i>${arr[i]['data']['name'][0]}</span></li>`;
+                html += `<li class="list-group-item"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg me-2" viewBox="0 0 16 16">
+  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/ style="fill: #0d6efd;">
+</svg>${arr[i]['data']['name'][0]}</span></li>`;
             } else if (!arr[i]['onUse']) {
-                html += `<li class="list-group-item"><span class="opacity-25"><i class="bi bi-dash-lg me-2"></i>${arr[i]['data']['name'][0]}</span></li>`;
+                html += `<li class="list-group-item"><span class="opacity-25"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg me-2" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+</svg>${arr[i]['data']['name'][0]}</span></li>`;
             };
 
         };
@@ -117,8 +121,12 @@ $('input[class^="target-point"]').on('change', function () {
 
     if (value <= 0) { // 入力値が0以下の場合
         value = 0; // 入力値を0にする
-    } else if (String(value).length >= 8) { // 入力値が7桁以上の場合
-        value = String(value).slice(0, 8); // 入力値を7桁にする
+    } else if (String(value).length >= 8) { // 入力値が8桁以上の場合
+        value = String(value).slice(0, 8); // 入力値を8桁にする
+    };
+
+    if (value > 29999999) { // 入力値が0以上の場合
+        value = 29999999; // 入力値を0にする
     };
 
     $(this).val(value);
@@ -130,8 +138,12 @@ $('input[class^="current-point"]').on('change', function () {
 
     if (value <= 0) { // 入力値が0以下の場合
         value = 0; // 入力値を0にする
-    } else if (String(value).length >= 8) { // 入力値が7桁以上の場合
-        value = String(value).slice(0, 8); // 入力値を7桁にする
+    } else if (String(value).length >= 8) { // 入力値が8桁以上の場合
+        value = String(value).slice(0, 8); // 入力値を8桁にする
+    };
+
+    if (value > 29999999) { // 入力値が0以上の場合
+        value = 29999999; // 入力値を0にする
     };
 
     $(this).val(value);
