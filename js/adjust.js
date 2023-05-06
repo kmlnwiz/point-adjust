@@ -86,7 +86,7 @@ function point_adjust() {
             if (arr[i]['onUse']) {
                 html += `<li class="list-group-item"><span><i class="bi bi-check-lg me-2 text-primary"></i>${arr[i]['data']['name'][0]}</span></li>`;
             } else if (!arr[i]['onUse']) {
-                html += `<li class="list-group-item"><span class="opacity-25"><i class="bi bi-dash me-2"></i></i>${arr[i]['data']['name'][0]}</span></li>`;
+                html += `<li class="list-group-item"><span class="opacity-25"><i class="bi bi-dash-lg me-2"></i>${arr[i]['data']['name'][0]}</span></li>`;
             };
 
         };
