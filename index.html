@@ -248,7 +248,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-lg-12 p-3 border">
+                        <div class="col col-lg-12 p-3 border d-none d-xxl-block">
                             <div>
                                 <div class="row g-1">
                                     <div class="col-12 col-sm-6 px-3">
@@ -292,14 +292,12 @@
                 入力された情報から、どのトーナメントをどのくらいクリアすれば目標のポイントを達成できるかを計算します。<br>
                 挑戦回数が同様となる解が複数ある場合は、そのうちの1つを表示します。<br><br>
                 〈優先される事項〉<br>
-                ➀1位以外の調整を要する回数が最小<br>
-                ➁9位以外の調整を要する回数が最小<br>
-                ➂挑戦回数の合計が最小<br>
-                ➃トーナメントの種類数が最小
+                ➀1位と9位以下のみで調整を行えるもの<br>
+                ➁トーナメント挑戦回数が最も少ないもの<br>
             </div>
-            <!--<div class="alert alert-warning" role="alert">
-                Safariなどでフォームの入力内容が画像に反映されない場合は、設定からトラッキングの防止をオフにすると描写される場合があります。なお設定の変更により生じた不利益等については一切責任を負いません。
-            </div>-->
+            <div class="alert alert-warning" role="alert">
+                拾式9位以下を複数回など実現不可能な解が表示される場合があります。
+            </div>
             <div class="alert alert-secondary mt-0" role="alert">
                 使用している画像等の知的財産は提供者様側に帰属します。
             </div>
