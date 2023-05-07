@@ -97,10 +97,11 @@ function point_adjust() {
         return html;
     };
 
-    function minutesToTime(minutes) {
-        const hours = String(Math.floor(minutes / 60));
-        const mins = String(Math.ceil(minutes % 60));
-        return `${hours}<span class="small"> 時間 </span>${mins}<span class="small"> 分</span>`;
+    function minutesToTime(sec) {
+        const seconds = Math.ceil(sec * 60)
+        const hours = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        return `${hours}<span class="small"> 時間 </span>${minutes}<span class="small"> 分</span>`;
     };
 
     $('#show-current-point').html(`${current.toLocaleString()}<span class="small"> Pt</span>`);
