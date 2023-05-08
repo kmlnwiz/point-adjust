@@ -364,7 +364,6 @@
         //画像生成
         document.createImg = () => {
             //window.scrollTo(0, 0);
-            setTimeout(function () {
                 const content = document.querySelector('#image-source');
                 const canvasElement = document.querySelector('#canvas-output');
 
@@ -380,8 +379,7 @@
                 }).then(canvas => {
                     canvasElement.src = canvas.toDataURL();
                 });
-            }, 200)
-        };
+            };
     </script>
     <script>
         /*!
