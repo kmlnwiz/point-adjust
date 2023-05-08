@@ -106,11 +106,11 @@ function generateResult(result, current) {
         `<tr class="">`;
 
     html +=
-        `<th class="text-center" scope="col" style="width: 5%;">#</th>` +
+        `<th class="text-center" scope="col" style="width: 7.5%;">#</th>` +
         `<th class="text-center" scope="col" style="width: 40%; min-width: 15.0em;">トーナメント</th>` +
         `<th class="text-center" scope="col" style="width: 10%; min-width: 5.0em;">順位</th>` +
         `<th class="text-center" scope="col" style="width: 10%; min-width: 5.0em;">回数</th>` +
-        `<th class="text-center" scope="col" style="width: 15%; min-width: 5.0em;">ポイント</th>` +
+        `<th class="text-center" scope="col" style="width: 12.5%; min-width: 5.0em;">ポイント</th>` +
         `<th class="text-center" scope="col" style="width: 20%; min-width: 10.0em;">合計ポイント</th>`;
 
     html +=
@@ -132,7 +132,8 @@ function generateResult(result, current) {
     for (let i = 0; i < result.length; i++) {
         sum += result[i]['point'] * result[i]['count'];
         html +=
-            `<tr class="">` +
+            (result[i]['name'].includes('イベント') ? `<tr class="table-info">` : `<tr class="">`) +
+
             `<td class="text-center" scope="col">${i + 1}</td>` +
             `<td class="text-center" scope="col">${result[i]['name']}</td>` +
             `<td class="text-center" scope="col">${result[i]['rank'] >= 9 ? `${result[i]['rank']}位以下` : `${result[i]['rank']}位`}</td>` +
