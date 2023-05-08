@@ -1,5 +1,5 @@
 event_class1 = {
-    name: Array(9).fill('イベントトーナメント覇級'),
+    name: Array(9).fill('イベント 覇級'),
     rank: [...Array(9)].map((_, i) => i + 1),
     point: [0, 0, 0, 0, 0, 0, 0, 0, 0],
     time: [...Array(9)].map((_, i) => 4.00 + (i ** 1.25) / 4, 2),
@@ -7,7 +7,7 @@ event_class1 = {
 };
 
 event_class2 = {
-    name: Array(9).fill('イベントトーナメント絶級'),
+    name: Array(9).fill('イベント 絶級'),
     rank: [...Array(9)].map((_, i) => i + 1),
     point: [6000, 4800, 3840, 3072, 0, 0, 0, 0, 812],
     time: [...Array(9)].map((_, i) => 3.00 + (i ** 1.25) / 4, 2),
@@ -15,7 +15,7 @@ event_class2 = {
 };
 
 event_class3 = {
-    name: Array(9).fill('イベントトーナメント上級'),
+    name: Array(9).fill('イベント 上級'),
     rank: [...Array(9)].map((_, i) => i + 1),
     point: [4200, 3360, 2688, 0, 0, 0, 0, 0, 568],
     time: [...Array(9)].map((_, i) => 2.50 + (i ** 1.25) / 4, 2),
@@ -23,7 +23,7 @@ event_class3 = {
 };
 
 event_class4 = {
-    name: Array(9).fill('イベントトーナメント中級'),
+    name: Array(9).fill('イベント 中級'),
     rank: [...Array(9)].map((_, i) => i + 1),
     point: [2500, 2000, 1600, 1280, 1024, 0, 0, 0, 338],
     time: [...Array(9)].map((_, i) => 2.00 + (i ** 1.25) / 4, 2),
@@ -31,7 +31,7 @@ event_class4 = {
 };
 
 event_class0 = {
-    name: Array(9).fill('イベントトーナメント覇級（練習）'),
+    name: Array(9).fill('イベント 覇級（練習）'),
     rank: [...Array(9)].map((_, i) => i + 1),
     point: [1, 1, 1, 1, 1, 1, 1, 1, 1],
     time: event_class1['time']
