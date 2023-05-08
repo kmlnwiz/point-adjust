@@ -169,6 +169,21 @@ $(document).on('change', '[id^="accA-item"] input', function () {
     point_adjust();
 });
 
+$(document).on('change', '[id^="accB-item"] input', function () {
+    let value = Number($(this).val()); // 入力値を取得する
+
+    if (value <= 0) { // 入力値が0以下の場合
+        value = 0; // 入力値を0にする
+    };
+
+    const number = Number($(this).attr('id').slice(-3, -2));
+    const index = Number($(this).attr('id').slice(-1));
+
+    window['normal_class' + number]['point'][index] = value;
+
+    point_adjust();
+});
+
 
 function escapeHtml(str) {
     return str.replace(/[&'`"<>]/g, function (match) {
