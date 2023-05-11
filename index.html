@@ -216,7 +216,7 @@
 
             <div id="image-source">
                 <div id="which-mode" class="w-100 h4 row g-0 my-0">
-                    <span class="col d-inline-block text-bg-danger text-center py-2">ポイント調整</span>
+                    <span class="col d-inline-block text-bg-danger text-center fw-bold py-1">ポイント調整</span>
                 </div>
 
                 <div class="row g-0">
@@ -326,6 +326,7 @@
                     <img id="canvas-output" class="border border-2 img-fluid my-1">
                 </div>
                 <div class="modal-footer p-2">
+                    <button type="button" class="btn btn-success" onclick="shareData()"><i class="bi bi-share-fill me-2"></i>共有</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -384,6 +385,29 @@
             }).then(canvas => {
                 canvasElement.src = canvas.toDataURL();
             });
+        };
+    </script>
+    <script>
+        function shareData() {
+
+            const imageUrl = $('#canvas-output').attr('src');
+            const textData = {};
+
+            // 共有するデータを含むオブジェクトを作成
+            const shareData = {
+                title: '魔道杯　ポイント調整',
+                text: '',
+                files: [
+                    new File([imageUrl], 'image.jpg', {
+                        type: 'image/jpeg'
+                    })
+                ]
+            };
+
+            // 共有ダイアログを開く
+            navigator.share(shareData)
+                .then(() => console.log('Shared successfully'))
+                .catch((error) => console.error('Error sharing', error));
         };
     </script>
     <script>
