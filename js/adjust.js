@@ -98,8 +98,8 @@ function point_adjust() {
     };
 
     function minutesToTime(sec) {
-        const margin = 600;
-        const seconds = Math.ceil((sec + margin) * 60)
+        const marginSeconds = 10;
+        const seconds = Math.ceil((sec + marginSeconds) * 60)
         const hours = Math.floor(seconds / 3600);
         const minutes = Math.floor((seconds % 3600) / 60);
         return `${hours}<span class="small"> 時間 </span>${minutes}<span class="small"> 分</span>`;
