@@ -106,11 +106,11 @@ function generateResult(result, current) {
         `<tr class="">`;
 
     html +=
-        `<th class="text-center" scope="col" style="width: 7.5%;">#</th>` +
+        `<th class="text-center" scope="col" style="width: 9.0%;">#</th>` +
         `<th class="text-center" scope="col" style="width: 40.0%; min-width: 15.0em;">トーナメント</th>` +
-        `<th class="text-center" scope="col" style="width: 10.0%; min-width: 5.0em;">順位</th>` +
-        `<th class="text-center" scope="col" style="width: 10.0%; min-width: 5.0em;">回数</th>` +
-        `<th class="text-center" scope="col" style="width: 12.5%; min-width: 5.0em;">ポイント</th>` +
+        `<th class="text-center" scope="col" style="width: 9.0%; min-width: 5.0em;">順位</th>` +
+        `<th class="text-center" scope="col" style="width: 9.0%; min-width: 5.0em;">回数</th>` +
+        `<th class="text-center" scope="col" style="width: 13.0%; min-width: 5.0em;">ポイント</th>` +
         `<th class="text-center" scope="col" style="width: 20.0%; min-width: 10.0em;">合計ポイント</th>`;
 
     html +=
