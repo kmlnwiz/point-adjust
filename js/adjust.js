@@ -158,7 +158,7 @@ $('.use-select').on('change', point_adjust);
 $(document).on('change', '[id^="accA-item"] input', function () {
     let value = Number($(this).val()); // 入力値を取得する
 
-    if (value <= 0) { // 入力値が0以下の場合
+    if (value <= 0 || value == '') { // 入力値が0以下の場合
         value = 0; // 入力値を0にする
     };
 
@@ -173,7 +173,7 @@ $(document).on('change', '[id^="accA-item"] input', function () {
 $(document).on('change', '[id^="accB-item"] input', function () {
     let value = Number($(this).val()); // 入力値を取得する
 
-    if (value <= 0) { // 入力値が0以下の場合
+    if (value <= 0 || value == '') { // 入力値が0以下の場合
         value = 0; // 入力値を0にする
     };
 
