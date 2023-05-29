@@ -100,7 +100,7 @@ function generateResult(result, current) {
 
     let html = '';
     html +=
-        `<table class="table table-hover table-sm align-middle">` +
+        `<table class="table table-hover align-middle">` +
         `<caption class="d-md-none">横にスクロールできます</caption>` +
         `<thead class="">` +
         `<tr class="">`;
