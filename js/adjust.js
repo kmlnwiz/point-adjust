@@ -98,7 +98,7 @@ function point_adjust() {
     };
 
     function minutesToTime(sec) {
-        const marginSeconds = 10;
+        const marginSeconds = sec > 0 ? 10 : 0;
         const seconds = Math.ceil((sec + marginSeconds) * 60)
         const hours = Math.floor(seconds / 3600);
         const minutes = Math.floor((seconds % 3600) / 60);
