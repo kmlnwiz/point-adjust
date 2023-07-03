@@ -1,4 +1,5 @@
 # 魔道杯　ポイント調整
+https://kmlnwiz.github.io/point-adjust/
 
 # DEMO
 
